@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="F:\Sem7\Net_Centric_Prog\banking\css\style1.css">
+        <h1 align="center">Online Banking Application</h1>
+    </head>
+    <body>
+        <br><br>
+    <form action="/add_beneficiary" method="post">
+        <h2>Add Beneficiary</h2>
+        <p>
+            <label>Name</label><br><br>
+            <input type="text" name="name">
+          </p>
+        <p>
+            <label>Account Number</label><br><br>
+            <input type="text" name="acc_no1">
+        </p>
+        <p>
+            <label>Address</label><br><br>
+            <input type="text" name="address">
+          </p>
+        <p>
+            <label>Transfer Limit</label><br><br>
+            <input type="number" name="limit">
+        </p>
+        <p>
+            <label>IFSC Code</label><br><br>
+            <input type="text" name="ifsc" required>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" value="terms">
+            I agree to the <a href="/terms">terms and conditions</a>
+          </label>
+        </p>
+        <p>
+          <button>Add</button> &nbsp;
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+    </body>
+</html>

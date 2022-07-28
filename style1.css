@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(234, 240, 227);
+  }
+  h1{
+    color: rgb(3, 168, 3);border: 2px solid green;border-style:groove;border-radius: 5px;
+  }
+  form{
+    margin: auto; width: 220px;border: 2px solid green;width: 300;text-align: center;
+  }

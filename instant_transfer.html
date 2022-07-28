@@ -1,0 +1,38 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="F:\Sem7\Net_Centric_Prog\banking\css\style1.css">
+        <h1 align="center">Online Banking Application</h1>
+    </head>
+    <body>
+      <br>
+    <form action="/signup" method="post">
+      <h2>Instant Money Transfer</h2>  
+        <p>
+          <label>Beneficiary Account Number</label><br><br>
+          <input type="text" name="acc_no">
+        </p>
+        <p>
+          <label>IFSC Code</label><br><br>
+          <input type="text" name="ifsc">
+        </p>
+        <p>
+          <label>Amount</label><br><br>
+          <input type="number" name="amt" required>
+        </p>
+        <p>
+          <label>Purpose</label><br><br>
+          <input type="text" name="Purpose">
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" value="terms">
+            I agree to the <a href="/terms">terms and conditions</a>
+          </label>
+        </p>
+        <p>
+          <button>Submit</button>
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+    </body>
+</html>

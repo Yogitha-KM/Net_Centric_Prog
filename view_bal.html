@@ -13,39 +13,16 @@
     &nbsp;&nbsp;&nbsp;<a href="F:\Sem7\Net_Centric_Prog\banking\forms\instant_transfer.html">Instant Transfer</a><br><br>
     &nbsp;&nbsp;&nbsp;<a href="F:\Sem7\Net_Centric_Prog\banking\forms\request_cheque.html">Request Cheque</a>
 </div>
-<div style="width:85%;height:800;float: right;">
+    <div style="width:85%;height:800;float: right;">
         <br><br>
-    <form action="/request_cheque" method="post" style="margin: auto; width: 220px;border: 2px solid blue;width: 300;text-align: center;">
-        <h2>Cheque Request</h2>
+    <form action="/view_bal" method="post" style="margin: auto; width: 220px;border: 2px solid blue;width: 300;text-align: center;">
+        <h2>View Balance</h2>
         <p>
           <label>Account Number</label><br><br>
           <input type="text" name="acc_no">
         </p>
         <p>
-          <label>Threshold</label><br><br>
-          <input type="text" name="last_name">
-        </p>
-        <p>
-          <label>Number of Cheque Books</label><br><br>
-          <input type="email" name="email" required>
-        </p>
-        <p>
-          <label for="leaves">Number of Leaves</label><br><br>
-          <select name="leaves" id="leaves">
-            <option value="10">10</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
-            <option value="50">50</option>
-          </select>
-        </p>
-        <p>
-          <label>
-            <input type="checkbox" value="terms">
-            I agree to the <a href="/terms">terms and conditions</a>
-          </label>
-        </p>
-        <p>
-          <button>Submit</button> &nbsp;
+          <button>View Balance</button> &nbsp;
           <button type="reset">Reset form</button>
         </p>
       </form>

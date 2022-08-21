@@ -1,34 +1,43 @@
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+  </head>
   <header>
-    <div style="background-color: grey; text-align:center; height:100">
+    <div class="topdiv">
       <br>
       <h1>Online Banking</h1>
   </div>
 </header>
-<div style="width:15%;height:800;background-color:rgb(221, 215, 215);float: left;">
+<!-- <div class="leftdiv">
   <br>
   &nbsp;&nbsp;&nbsp;<a href="index.html">Home</a><br><br>
   &nbsp;&nbsp;&nbsp;<a href="login.html">Login</a><br><br>
   &nbsp;&nbsp;&nbsp;<a href="register.html">Register</a><br><br>
   &nbsp;&nbsp;&nbsp;<a href="view_bal.html">View Balance</a><br><br>
   &nbsp;&nbsp;&nbsp;<a href="instant_transfer.html">Instant Transfer</a><br><br>
-  &nbsp;&nbsp;&nbsp;<a href="request_cheque.html">Request Cheque</a>
-</div>
-    <div style="width:85%;height:800;float: right;">
+  &nbsp;&nbsp;&nbsp;<a href="request_cheque.html">Request Cheque</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="add_beneficiary.html">Add Beneficiary</a>
+</div> -->
+    <div class="loginformdiv">
         <br><br>
-    <form action="/login" method="post" style="margin: auto; width: 220px;border: 2px solid blue;width: 300;text-align: center;">
+    <form class="mainf" action="index.html" method="post">
         <h2>Login</h2>
         <p>
           <label>User ID</label><br><br>
-          <input type="text" name="id">
+          <input type="text" name="id" required>
         </p>
         <p>
             <label>Password</label><br><br>
-            <input type="password" name="pw">
+            <input type="password" name="pw" required>
           </p>
         <p>
           <button>Login</button> &nbsp;
           <button type="reset">Reset form</button>
+        </p>
+        <p>
+          <a style="width: 100;height: 50;"href="register.html">New User? Register Here</a>
         </p>
       </form>
     </div>

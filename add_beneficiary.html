@@ -1,19 +1,27 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="F:\Sem7\Net_Centric_Prog\banking\css\style1.css">
-        <h1 align="center">Online Banking Application</h1>
-    </head>
-    <div style="width:150;height:800;background-color:rgb(221, 215, 215);">
-      <br>
-      &nbsp;&nbsp;&nbsp;<a href="F:\Sem7\Net_Centric_Prog\banking\forms\login.html">Login</a><br><br>
-      &nbsp;&nbsp;&nbsp;<a href="F:\Sem7\Net_Centric_Prog\banking\forms\register.html">Register</a><br><br>
-      &nbsp;&nbsp;&nbsp;<a href="F:\Sem7\Net_Centric_Prog\banking\forms\view_bal.html">View Balance</a><br><br>
-      &nbsp;&nbsp;&nbsp;<a href="F:\Sem7\Net_Centric_Prog\banking\forms\instant_transfer.html">Instant Transfer</a><br><br>
-      &nbsp;&nbsp;&nbsp;<a href="F:\Sem7\Net_Centric_Prog\banking\forms\request_cheque.html">Request Cheque</a>
-  </div>
-    <body>
-        <br><br>
-    <form action="/add_beneficiary" method="post">
+  <head>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<header>
+  <div class="topdiv">
+    <br>
+    <h1>Online Banking</h1>
+</div>
+</header>
+<div class="leftdiv">
+  <br>
+  &nbsp;&nbsp;&nbsp;<a href="index.html">Home</a><br><br>
+  <!-- &nbsp;&nbsp;&nbsp;<a href="register.html">Register</a><br><br> -->
+  &nbsp;&nbsp;&nbsp;<a href="view_bal.html">View Balance</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="instant_transfer.html">Instant Transfer</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="other_bank_transfer.html">Other Bank Transfer</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="request_cheque.html">Request Cheque</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="add_beneficiary.html">Add Beneficiary</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="login.html">Log Out</a><br><br>
+</div>
+    <div class="formdiv">
+    <br><br>
+    <form class="subf" action="/add_beneficiary" method="post">
         <h2>Add Beneficiary</h2>
         <p>
             <label>Name</label><br><br>
@@ -38,7 +46,7 @@
         <p>
           <label>
             <input type="checkbox" value="terms">
-            I agree to the <a href="/terms">terms and conditions</a>
+            I agree to the terms and conditions
           </label>
         </p>
         <p>
@@ -46,5 +54,5 @@
           <button type="reset">Reset form</button>
         </p>
       </form>
-    </body>
+    </div>
 </html>

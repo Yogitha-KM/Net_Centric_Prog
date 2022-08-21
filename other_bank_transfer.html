@@ -22,18 +22,16 @@
     <div class="formdiv">
       <br>
     <form class="subf" action="/signup" method="post">
-      <h2>Instant Money Transfer</h2>  
-      <p>
-        <label>Beneficiary Name</label><br><br>
-        <input type="text" name="ben_name">
-      </p>  
-      <p>
-          <label>Beneficiary Account Number</label><br><br>
-          <input type="text" name="acc_no">
+      <h2>Other Bank Transfer</h2>  
+        <p>
+          <label>Select Beneficiary Account</label><br><br>
+          <input type="radio" name="acc_no" value="b1">XYZ <br>
+          <input type="radio" name="acc_no" value="b2">ABC <br>
+          <input type="radio" name="acc_no" value="b3">KLM <br>
         </p>
         <p>
           <label>IFSC Code</label><br><br>
-          <input type="text" name="ifsc">
+          <input type="text" name="ifsc" required>
         </p>
         <p>
           <label>Amount</label><br><br>
@@ -41,11 +39,11 @@
         </p>
         <p>
           <label>Purpose</label><br><br>
-          <input type="text" name="Purpose">
+          <input type="text" name="Purpose" required>
         </p>
         <p>
           <label>
-            <input type="checkbox" value="terms">
+            <input type="checkbox" value="terms" required>
             I agree to the terms and conditions
           </label>
         </p>

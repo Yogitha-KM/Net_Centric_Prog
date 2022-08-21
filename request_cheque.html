@@ -1,30 +1,35 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="style1.css">
+  </head>
   <header>
-    <div style="background-color: grey; text-align:center; height:100">
+    <div class="topdiv">
       <br>
       <h1>Online Banking</h1>
   </div>
 </header>
-<div style="width:15%;height:800;background-color:rgb(221, 215, 215);float: left;">
+<div class="leftdiv">
   <br>
   &nbsp;&nbsp;&nbsp;<a href="index.html">Home</a><br><br>
-  &nbsp;&nbsp;&nbsp;<a href="login.html">Login</a><br><br>
-  &nbsp;&nbsp;&nbsp;<a href="register.html">Register</a><br><br>
+  <!-- &nbsp;&nbsp;&nbsp;<a href="register.html">Register</a><br><br> -->
   &nbsp;&nbsp;&nbsp;<a href="view_bal.html">View Balance</a><br><br>
   &nbsp;&nbsp;&nbsp;<a href="instant_transfer.html">Instant Transfer</a><br><br>
-  &nbsp;&nbsp;&nbsp;<a href="request_cheque.html">Request Cheque</a>
+  &nbsp;&nbsp;&nbsp;<a href="other_bank_transfer.html">Other Bank Transfer</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="request_cheque.html">Request Cheque</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="add_beneficiary.html">Add Beneficiary</a><br><br>
+  &nbsp;&nbsp;&nbsp;<a href="login.html">Log Out</a><br><br>
 </div>
-<div style="width:85%;height:800;float: right;">
+<div class="formdiv">
         <br><br>
-    <form action="/request_cheque" method="post" style="margin: auto; width: 220px;border: 2px solid blue;width: 300;text-align: center;">
+    <form class="subf" action="/request_cheque" method="post">
         <h2>Cheque Request</h2>
         <p>
           <label>Account Number</label><br><br>
-          <input type="text" name="acc_no">
+          <input type="text" name="acc_no" required>
         </p>
         <p>
           <label>Threshold</label><br><br>
-          <input type="text" name="last_name">
+          <input type="text" name="last_name" required>
         </p>
         <p>
           <label>Number of Cheque Books</label><br><br>
@@ -32,7 +37,7 @@
         </p>
         <p>
           <label for="leaves">Number of Leaves</label><br><br>
-          <select name="leaves" id="leaves">
+          <select name="leaves" id="leaves" required>
             <option value="10">10</option>
             <option value="20">20</option>
             <option value="25">25</option>
@@ -41,8 +46,8 @@
         </p>
         <p>
           <label>
-            <input type="checkbox" value="terms">
-            I agree to the <a href="/terms">terms and conditions</a>
+            <input type="checkbox" value="terms" required>
+            I agree to the terms and conditions
           </label>
         </p>
         <p>

@@ -45,6 +45,7 @@
   .loginformdiv{
     background-color:#A7BEAE;
     height:500;
+    display: flex;
   }
   .registerformdiv{
     background-color:#A7BEAE;
